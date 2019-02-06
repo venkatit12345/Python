@@ -1,0 +1,24 @@
+gAdministrator@EC2AMAZ-MD4314H MINGW64 ~/Desktop/python (master)
+$ echo "# Python" >> README.md
+
+Administrator@EC2AMAZ-MD4314H MINGW64 ~/Desktop/python (master)
+$ git init
+
+Administrator@EC2AMAZ-MD4314H MINGW64 ~/Desktop/python (master)
+$ git add README.md
+
+
+Administrator@EC2AMAZ-MD4314H MINGW64 ~/Desktop/python (master)
+$ git commit -m "first commit"
+
+
+Administrator@EC2AMAZ-MD4314H MINGW64 ~/Desktop/python (master)
+$ git remote add origin https://github.com/venkatit12345/Python.git
+
+
+Administrator@EC2AMAZ-MD4314H MINGW64 ~/Desktop/python (master)
+$ git push -u origin master
+
+
+Administrator@EC2AMAZ-MD4314H MINGW64 ~/Desktop/python (master)
+$
