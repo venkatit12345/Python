@@ -1,0 +1,69 @@
+break statement
+
+The break is a keyword in python which is used to bring the program control out of the loop. The break statement breaks the loops one by one, i.e., in the case of nested loops, it breaks the inner loop first and then proceeds to outer loops. In other words, we can say that break is used to abort the current execution of the program and the control goes to the next line after the loop.
+
+The break is commonly used in the cases where we need to break the loop for a given condition.
+
+The syntax of the break is given below.
+
+#loop statements  
+break;  
+
+Example 1
+
+list =[1,2,3,4]  
+count = 1;  
+for i in list:  
+    if i == 4:  
+        print("item matched")  
+        count = count + 1;  
+        break  
+print("found at",count,"location"); 
+
+Example 2
+
+str = "python"  
+for i in str:  
+    if i == 'o':  
+        break  
+    print(i);    
+
+break statement with while loop
+
+i = 0;  
+while 1:  
+    print(i," ",end=""),  
+    i=i+1;  
+    if i == 10:  
+        break;  
+print("came out of while loop");  
+
+
+continue Statement
+
+The continue statement in python is used to bring the program control to the beginning of the loop. The continue statement skips the remaining lines of code inside the loop and start with the next iteration. It is mainly used for a particular condition inside the loop so that we can skip some specific code for a particular condition.
+
+The syntax of Python continue statement is given below.
+
+#loop statements  
+continue;  
+#the code to be skipped  
+ 
+Example 1
+
+i = 0;  
+while i!=10:  
+    print("%d"%i);  
+    continue;  
+    i=i+1;  
+
+Example 2
+
+i=1; #initializing a local variable  
+#starting a loop from 1 to 10  
+for i in range(1,11):  
+    if i==5:  
+        continue;  
+    print("%d"%i);  
+
+

@@ -1,0 +1,142 @@
+String
+
+Till now, we have discussed numbers as the standard data types in python. In this section of the tutorial, we will discuss the most popular data type in python i.e., string.
+
+In python, strings can be created by enclosing the character or the sequence of characters in the quotes. Python allows us to use single quotes, double quotes, or triple quotes to create the string.
+
+Consider the following example in python to create a string.
+
+str = "Hi Python !"  
+
+Here, if we check the type of the variable str using a python script
+
+print(type(str)), then it will print string (str).  
+
+In python, strings are treated as the sequence of strings which means that python doesn't support the character data type instead a single character written as 'p' is treated as the string of length 1.
+
+Strings indexing and splitting
+
+Like other languages, the indexing of the python strings starts from 0. For example, The string "HELLO" is indexed as given in the below figure.
+
+Python String
+
+As shown in python, the slice operator [] is used to access the individual characters of the string. However, we can use the : (colon) operator in python to access the substring. Consider the following example.
+
+Python String
+
+Here, we must notice that the upper range given in the slice operator is always exclusive i.e., if str = 'python' is given, then str[1:3] will always include str[1] = 'p', str[2] = 'y', str[3] = 't' and nothing else.
+
+
+Reassigning strings
+
+Updating the content of the strings is as easy as assigning it to a new string. The string object doesn't support item assignment i.e., A string can only be replaced with a new string since its content can not be partially replaced. Strings are immutable in python.
+
+Consider the following example.
+
+Example 1
+str = "HELLO"  
+str[0] = "h"  
+print(str)  
+
+Output:
+
+Traceback (most recent call last):
+  File "12.py", line 2, in <module>
+    str[0] = "h";
+TypeError: 'str' object does not support item assignment
+However, in example 1, the string str can be completely assigned to a new content as specified in the following example.
+
+Example 2
+
+str = "HELLO"  
+print(str)  
+str = "hello"  
+print(str)  
+
+Example
+
+Consider the following example to understand the real use of Python operators.
+
+str = "Hello"   
+str1 = " world"  
+print(str*3) # prints HelloHelloHello  
+print(str+str1)# prints Hello world   
+print(str[4]) # prints o              
+print(str[2:4]); # prints ll                  
+print('w' in str) # prints false as w is not present in str  
+print('wo' not in str1) # prints false as wo is present in str1.   
+print(r'C://python37') # prints C://python37 as it is written  
+print("The string str : %s"%(str)) # prints The string str : Hello 
+
+Example
+
+Get the character at position 1 (remember that the first character has the position 0):
+
+a = "Hello, World!"
+print(a[1])
+
+Example
+
+Substring. Get the characters from position 2 to position 5 (not included):
+
+b = "Hello, World!"
+print(b[2:5])
+
+Example
+
+The strip() method removes any whitespace from the beginning or the end:
+
+a = " Hello, World! "
+print(a.strip()) # returns "Hello, World!"
+
+Example
+
+The len() method returns the length of a string:
+
+a = "Hello, World!"
+print(len(a))
+
+Example
+
+The lower() method returns the string in lower case:
+
+a = "Hello, World!"
+print(a.lower())
+
+Example
+
+The upper() method returns the string in upper case:
+
+a = "Hello, World!"
+print(a.upper())
+
+Example
+
+The replace() method replaces a string with another string:
+
+a = "Hello, World!"
+print(a.replace("H", "J"))
+
+Example
+
+The split() method splits the string into substrings if it finds instances of the separator:
+
+a = "Hello, World!"
+print(a.split(",")) # returns ['Hello', ' World!']
+
+Command-line String Input
+
+Python allows for command line input.
+
+That means we are able to ask the user for input.
+
+The following example asks for the user's name, then, by using the input() method, the program prints the name to the screen:
+
+Example
+
+demo_string_input.py
+
+print("Enter your name:")
+x = input()
+print("Hello, " + x)
+
