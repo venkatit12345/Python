@@ -1,0 +1,98 @@
+Python Keywords are special reserved words which convey a special meaning to the compiler/interpreter. Each keyword have a special meaning and a specific operation. These keywords can't be used as variable. Following is the List of Python Keywords.
+
+True	False	None	and	as
+asset	def	class	continue	break
+else	finally	elif	del	except
+global	for	if	from	import
+raise	try	or	return	pass
+nonlocal	in	not	is	lambda
+
+Python Literals
+
+Literals can be defined as a data that is given in a variable or constant.
+
+Python support the following literals:
+
+I. String literals:
+
+String literals can be formed by enclosing a text in the quotes. We can use both single as well as double quotes for a String.
+
+Eg:
+
+"Aman" , '12345'
+
+Types of Strings:
+
+There are two types of Strings supported in Python:
+
+a).Single line String- Strings that are terminated within a single line are known as Single line Strings.
+
+Eg:
+
+>>> text1='hello'  
+b).Multi line String- A piece of text that is spread along multiple lines is known as Multiple line String.
+
+There are two ways to create Multiline Strings:
+
+1). Adding black slash at the end of each line.
+
+Eg:
+
+>>> text1='hello\  
+user'  
+>>> text1  
+'hellouser'  
+>>>  
+2).Using triple quotation marks:-
+
+Eg:
+
+>>> str2='''''welcome 
+to 
+SSSIT'''  
+>>> print str2  
+welcome  
+to  
+SSSIT  
+
+II.Numeric literals:
+
+Numeric Literals are immutable. Numeric literals can belong to following four different numerical types.
+
+Int(signed integers)	Long(long integers)	float(floating point)	Complex(complex)
+Numbers( can be both positive and negative) with no fractional part.eg: 100	Integers of unlimited size followed by lowercase or uppercase L eg: 87032845L	Real numbers with both integer and fractional part eg: -26.2	In the form of a+bj where a forms the real part and b forms the imaginary part of complex number. eg: 3.14j
+
+>>> val1=10  
+>>> val2=None  
+>>> val1  
+10  
+>>> val2  
+>>> print val2  
+None  
+
+Python Operators
+
+The operator can be defined as a symbol which is responsible for a particular operation between two operands. Operators are the pillars of a program on which the logic is built in a particular programming language. Python provides a variety of operators described as follows.
+
+Arithmetic operators(+,-,*,/,%)
+Comparison operators(<,>,<=,>=)
+Assignment Operators
+Logical Operators(&,|,!,!=)
+Bitwise Operators
+Membership Operators(in,not in)
+Identity Operators( is ,is not)
+
+Comments in Python
+
+# This is single line comment.  
+print "Hello Python" 
+
+Multi Line Comment:
+
+Multi lined comment can be given inside triple quotes.
+
+eg:
+
+''''' This 
+    Is 
+    Multipline comment''' 
