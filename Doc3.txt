@@ -1,0 +1,257 @@
+If-else statements
+
+Decision making is the most important aspect of almost all the programming languages. As the name implies, decision making allows us to run a particular block of code for a particular decision. Here, the decisions are made on the validity of the particular conditions. Condition checking is the backbone of decision making.
+
+decision making is performed by the following statements.
+
+Statement	Description
+
+If Statement	The if statement is used to test a specific condition. If the condition is true, a block of code (if-block) will be executed.
+If - else Statement	The if-else statement is similar to if statement except the fact that, it also provides the block of the code for the false case of the condition to be checked. If the condition provided in the if statement is false, then the else statement will be executed.
+Nested if Statement	Nested if statements enable us to use if ? else statement inside an outer if statement.
+
+if-statement is given below.
+
+if expression:  
+    statement  
+
+Example 1
+
+num = int(input("enter the number?"))  
+if num%2 == 0:  
+    print("Number is even") 
+
+Program to print the largest of the three numbers.
+
+a = int(input("Enter a? "));  
+b = int(input("Enter b? "));  
+c = int(input("Enter c? "));  
+if a>b and a>c:  
+    print("a is largest");  
+if b>a and b>c:  
+    print("b is largest");  
+if c>a and c>b:  
+    print("c is largest"); 
+
+===========================
+if-else statement
+
+The if-else statement provides an else block combined with the if statement which is executed in the false case of the condition.
+
+If the condition is true, then the if-block is executed. Otherwise, the else-block is executed. 
+
+The syntax of the if-else statement is given below.
+
+if condition:  
+    #block of statements   
+else:   
+    #another block of statements (else-block)   
+
+Program to check whether a person is eligible to vote or not.
+
+age = int (input("Enter your age? "))  
+if age>=18:  
+    print("You are eligible to vote !!");  
+else:  
+    print("Sorry! you have to wait !!");  
+
+
+Program to check whether a number is even or not.
+
+num = int(input("enter the number?"))  
+if num%2 == 0:  
+    print("Number is even...")  
+else:  
+    print("Number is odd...")  
+
+elif statement
+
+The elif statement enables us to check multiple conditions and execute the specific block of statements depending upon the true condition among them. We can have any number of elif statements in our program depending upon our need. However, using elif is optional.
+
+if expression 1:   
+    # block of statements   
+  
+elif expression 2:   
+    # block of statements   
+  
+elif expression 3:   
+    # block of statements   
+  
+else:   
+    # block of statements 
+ 
+======Ex1===================
+
+number = int(input("Enter the number?"))  
+if number==10:  
+    print("number is equals to 10")  
+elif number==50:  
+    print("number is equal to 50");  
+elif number==100:  
+    print("number is equal to 100");  
+else:  
+    print("number is not equal to 10, 50 or 100");  
+
+Example 2
+
+marks = int(input("Enter the marks? "))  
+f marks > 85 and marks <= 100:  
+   print("Congrats ! you scored grade A ...")  
+lif marks > 60 and marks <= 85:  
+   print("You scored grade B + ...")  
+lif marks > 40 and marks <= 60:  
+   print("You scored grade B ...")  
+lif (marks > 30 and marks <= 40):  
+   print("You scored grade C ...")  
+lse:  
+   print("Sorry you are fail ?") 
+
+Loops
+
+The flow of the programs written in any programming language is sequential by default. Sometimes we may need to alter the flow of the program. The execution of a specific code may need to be repeated several numbers of times.
+ 
+Advantages of loops
+There are the following advantages of loops in Python.
+
+It provides code re-usability.
+Using loops, we do not need to write the same code again and again.
+Using loops, we can traverse over the elements of data structures (array or linked lists).
+
+Loop Statement	Description
+
+for loop	The for loop is used in the case where we need to execute some part of the code until the given condition is satisfied. The for loop is also called as a per-tested loop. It is better to use for loop if the number of iteration is known in advance.
+while loop	The while loop is to be used in the scenario where we don't know the number of iterations in advance. The block of statements is executed in the while loop until the condition specified in the while loop is satisfied. It is also called a pre-tested loop.
+do-while loop	The do-while loop continues until a given condition satisfies. It is also called post tested loop. It is used when it is necessary to execute the loop at least once (mostly menu driven programs).
+
+for loop
+
+The for loop in Python is used to iterate the statements or a part of the program several times. It is frequently used to traverse the data structures like list, tuple, or dictionary.
+
+The syntax of for loop in python is given below.
+
+for iterating_var in sequence:  
+    statement(s)  
+
+Example
+
+i=1  
+n=int(input("Enter the number up to which you want to print the natural numbers?"))  
+for i in range(0,10):  
+    print(i,end = ' ')  
+
+Python for loop example : printing the table of the given number
+
+i=1;  
+num = int(input("Enter a number:"));  
+for i in range(1,11):  
+    print("%d X %d = %d"%(num,i,num*i));  
+
+
+Python allows us to nest any number of for loops inside a for loop. The inner loop is executed n number of times for every iteration of the outer loop. The syntax of the nested for loop in python is given below.
+
+for iterating_var1 in sequence:  
+    for iterating_var2 in sequence:  
+        #block of statements   
+#Other statements  
+
+Example 1
+
+n = int(input("Enter the number of rows you want to print?"))  
+i,j=0,0  
+for i in range(0,n):  
+    print()  
+    for j in range(0,i+1):  
+        print("*",end="")  
+
+Using else statement with for loop
+
+Unlike other languages like C, C++, or Java, python allows us to use the else statement with the for loop which can be executed only when all the iterations are exhausted. Here, we must notice that if the loop contains any of the break statement then the else statement will not be executed.
+
+Example 1
+
+for i in range(0,5):  
+    print(i)  
+else:print("for loop completely exhausted, since there is no break.");  
+In the above example, for loop is executed completely since there is no break statement in the loop. The control comes out of the loop and hence the else block is executed.
+
+Example 2
+
+for i in range(0,5):  
+    print(i)  
+    break;  
+else:print("for loop is exhausted");  
+print("The loop is broken due to break statement...came out of loop")  
+In the above example, the loop is broken due to break statement therefore the else statement will not be executed. The statement present immediate next to else block will be executed.
+
+
+while loop
+
+The while loop is also known as a pre-tested loop. In general, a while loop allows a part of the code to be executed as long as the given condition is true.
+
+It can be viewed as a repeating if statement. The while loop is mostly used in the case where the number of iterations is not known in advance.
+
+The syntax is given below.
+
+while expression:  
+    statements  
+
+Here, the statements can be a single statement or the group of statements. The expression should be any valid python expression resulting into true or false. The true is any non-zero value.
+
+Example 1
+
+i=1;  
+while i<=10:  
+    print(i);  
+    i=i+1;  
+
+Example 2
+
+i=1  
+number=0  
+b=9  
+number = int(input("Enter the number?"))  
+while i<=10:  
+    print("%d X %d = %d \n"%(number,i,number*i));  
+    i = i+1;  
+
+Infinite while loop
+
+If the condition given in the while loop never becomes false then the while loop will never terminate and result into the infinite while loop.
+
+Any non-zero value in the while loop indicates an always-true condition whereas 0 indicates the always-false condition. This type of approach is useful if we want our program to run continuously in the loop without any disturbance.
+
+Example 1
+
+while (1):  
+    print("Hi! we are inside the infinite while loop");  
+
+Example 2
+
+var = 1  
+while var != 2:  
+    i = int(input("Enter the number?"))  
+    print ("Entered value is %d"%(i))  
+
+Using else with Python while loop
+
+Python enables us to use the while loop with the while loop also. The else block is executed when the condition given in the while statement becomes false. Like for loop, if the while loop is broken using break statement, then the else block will not be executed and the statement present after else block will be executed.
+
+Consider the following example.
+
+i=1;  
+while i<=5:  
+    print(i)  
+    i=i+1;  
+else:print("The while loop exhausted"); 
+
+Example 2
+
+i=1;  
+while i<=5:  
+    print(i)  
+    i=i+1;  
+    if(i==3):  
+        break;  
+else:print("The while loop exhausted");  
+
+
